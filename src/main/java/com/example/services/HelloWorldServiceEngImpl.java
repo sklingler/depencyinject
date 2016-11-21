@@ -5,7 +5,8 @@ import org.springframework.stereotype.Component;
 
 @Component
 // The active profile is configured in application.properties!
-@Profile("english")
+//@Profile("english")
+@Profile({"default","english"})
 public class HelloWorldServiceEngImpl implements HelloWorldService {
 
 	@Override
